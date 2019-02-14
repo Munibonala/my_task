@@ -1,0 +1,21 @@
+<div class="container">
+  <table>
+    <caption>Employee Details</caption>
+  <tr>
+    <th>statusCode</th>
+    <th>Name</th>
+    <th>EmployeeId</th>
+    <th>Email</th>
+    <th>SalaryFirstIncrement</th>
+    <th>SalarySecondIncrement</th>
+  </tr>
+  <tr *ngFor="let x of result.users">
+    <td>{{result.statusCode}}</td>
+    <td>{{x.name}}</td>
+    <td>{{x.empId}}</td>
+    <td>{{x.email}}</td>
+    <td>{{x.salary_Increments[0].firstIncrement}}</td>
+    <td>{{x.salary_Increments[0].secondIncrement}}</td>
+  </tr>
+</table>
+</div>
